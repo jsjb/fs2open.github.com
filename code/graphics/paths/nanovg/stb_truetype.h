@@ -2130,7 +2130,7 @@ static int stbtt__run_charstring(const stbtt_fontinfo *info, int glyph_index, st
 			#ifdef __GNUC__
 				#if __has_include(<features.h>)
 					#include <features.h>
-					#if __GNUC_PREREQ(8, 0)
+					#if __GNUC__ >= 8
 						__attribute__((fallthrough));
 					#endif		
 				#endif
